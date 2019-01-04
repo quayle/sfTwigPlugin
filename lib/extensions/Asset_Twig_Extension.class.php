@@ -5,35 +5,30 @@ class Asset_Twig_Extension extends Twig_Extension
   public function getFilters()
   {
     return array(
-              "auto_discovery_link_tag" => array("auto_discovery_link_tag", false),
-              "javascript_path" => array("javascript_path", false),
-              "javascript_include_tag" => array("javascript_include_tag", false),
-              "stylesheet_path" => array("stylesheet_path", false),
-              "stylesheet_tag" => array("stylesheet_tag", false),
-              "use_stylesheet" => array("use_stylesheet", false),
-              "use_javascript" => array("use_javascript", false),
-              "decorate_with" => array("decorate_with", false),
-              "image_path" => array("image_path", false),
-              "image_tag" => array("image_tag", false),
-              "include_metas" => array("include_metas", false),
-              "include_http_metas" => array("include_http_metas", false),
-              "include_title" => array("include_title", false),
-              "get_javascripts" => array("get_javascripts", false),
-              "include_javascripts" => array("include_javascripts", false),
-              "get_stylesheets" => array("get_stylesheets", false),
-              "include_stylesheets" => array("include_stylesheets", false),
-              "dynamic_javascript_include_tag" => array("dynamic_javascript_include_tag", false),
-              "use_dynamic_javascript" => array("use_dynamic_javascript", false),
-              "use_dynamic_stylesheet" => array("use_dynamic_stylesheet", false),
-              "get_javascripts_for_form" => array("get_javascripts_for_form", false),
-              "include_javascripts_for_form" => array("include_javascripts_for_form", false),
-              "get_stylesheets_for_form" => array("get_stylesheets_for_form", false),
-              "include_stylesheets_for_form" => array("include_stylesheets_for_form", false),
-            );
-  }
-
-  public function getName()
-  {
-    return "asset";
+        new Twig_Filter("auto_discovery_link_tag", "auto_discovery_link_tag"),
+        new Twig_Filter("javascript_path", "javascript_path"),
+        new Twig_Filter("javascript_include_tag", "javascript_include_tag"),
+        new Twig_Filter("stylesheet_path", "stylesheet_path"),
+        new Twig_Filter("stylesheet_tag", "stylesheet_tag"),
+        new Twig_Filter("use_stylesheet", "use_stylesheet"),
+        new Twig_Filter("use_javascript", "use_javascript"),
+        new Twig_Filter("decorate_with", "decorate_with"),
+        new Twig_Filter("image_path", "image_path"),
+        new Twig_Filter("image_tag", "image_tag"),
+        new Twig_Filter("include_metas", "include_metas"),
+        new Twig_Filter("include_http_metas", "include_http_metas"),
+        new Twig_Filter("include_title", "include_title"),
+        new Twig_Filter("get_javascripts", "get_javascripts"),
+        new Twig_Filter("include_javascripts", "include_javascripts"),
+        new Twig_Filter("get_stylesheets", "get_stylesheets"),
+        new Twig_Filter("include_stylesheets", "include_stylesheets"),
+        new Twig_Filter("dynamic_javascript_include_tag", "dynamic_javascript_include_tag"),
+        new Twig_Filter("use_dynamic_javascript", "use_dynamic_javascript"),
+        new Twig_Filter("use_dynamic_stylesheet", "use_dynamic_stylesheet"),
+        new Twig_Filter("get_javascripts_for_form", "get_javascripts_for_form"),
+        new Twig_Filter("include_javascripts_for_form", "include_javascripts_for_form"),
+        new Twig_Filter("get_stylesheets_for_form", "get_stylesheets_for_form"),
+        new Twig_Filter("include_stylesheets_for_form", "include_stylesheets_for_form"),
+    );
   }
 }

@@ -5,24 +5,19 @@ class Url_Twig_Extension extends Twig_Extension
   public function getFilters()
   {
     return array(
-              "link_to2" => array("link_to2", false),
-              "link_to1" => array("link_to1", false),
-              "url_for2" => array("url_for2", false),
-              "url_for1" => array("url_for1", false),
-              "url_for" => array("url_for", false),
-              "link_to" => array("link_to", false),
-              "url_for_form" => array("url_for_form", false),
-              "form_tag_for" => array("form_tag_for", false),
-              "link_to_if" => array("link_to_if", false),
-              "link_to_unless" => array("link_to_unless", false),
-              "public_path" => array("public_path", false),
-              "button_to" => array("button_to", false),
-              "mail_to" => array("mail_to", false),
-            );
-  }
-
-  public function getName()
-  {
-    return "url";
+        new Twig_Filter("link_to2", "link_to2"),
+        new Twig_Filter("link_to1", "link_to1"),
+        new Twig_Filter("url_for2", "url_for2"),
+        new Twig_Filter("url_for1", "url_for1"),
+        new Twig_Filter("url_for", "url_for"),
+        new Twig_Filter("link_to", "link_to"),
+        new Twig_Filter("url_for_form", "url_for_form"),
+        new Twig_Filter("form_tag_for", "form_tag_for"),
+        new Twig_Filter("link_to_if", "link_to_if"),
+        new Twig_Filter("link_to_unless", "link_to_unless"),
+        new Twig_Filter("public_path", "public_path"),
+        new Twig_Filter("button_to", "button_to"),
+        new Twig_Filter("mail_to", "mail_to"),
+    );
   }
 }

@@ -15,9 +15,4 @@ class Tag_Twig_Extension extends Twig_Extension
               "get_id_from_name" => array("get_id_from_name", false),
             );
   }
-
-  public function getName()
-  {
-    return "tag";
-  }
 }
