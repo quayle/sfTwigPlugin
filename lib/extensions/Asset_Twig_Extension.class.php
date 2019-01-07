@@ -14,7 +14,7 @@ class Asset_Twig_Extension extends Twig_Extension
         new Twig_Filter("use_javascript", "use_javascript"),
         new Twig_Filter("decorate_with", "decorate_with"),
         new Twig_Filter("image_path", "image_path"),
-        new Twig_Filter("image_tag", "image_tag"),
+        new Twig_Filter("image_tag", "image_tag", array('is_safe' => array('html'))),
         new Twig_Filter("include_metas", "include_metas"),
         new Twig_Filter("include_http_metas", "include_http_metas"),
         new Twig_Filter("include_title", "include_title"),
